@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias a: <App /> Renderizar <App /> al no estar conectado a web3, cuentas, contrato o metamask  1`] = `
+<div
+  className="container row"
+>
+  <div
+    className="col m2 hide-on-small-and-down"
+  />
+  <div
+    className="col s12 m8"
+  >
+    <div
+      className="alert card amber lighten-4 brown-text hide-on-small-and-down"
+    >
+      <div
+        className="close"
+      >
+        <i
+          aria-label="Close"
+          className="fas fa-times"
+          data-dismiss="alert"
+        />
+      </div>
+      <div
+        className="card-content"
+      >
+        <p>
+          <i
+            className="fas fa-exclamation-circle"
+          />
+           
+          <span>
+            Atención:
+          </span>
+          Compruebe que su navegador sea 
+          <strong>
+            Chrome
+          </strong>
+           o 
+          <strong>
+            Firefox
+          </strong>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      className="alert card amber lighten-4 brown-text hide-on-small-and-down"
+    >
+      <div
+        className="close"
+      >
+        <i
+          aria-label="Close"
+          className="fas fa-times"
+          data-dismiss="alert"
+        />
+      </div>
+      <div
+        className="card-content"
+      >
+        <p>
+          <i
+            className="fas fa-exclamation-circle"
+          />
+           
+          <span>
+            Atención:
+          </span>
+          Tener instalado la extensión 
+          <strong>
+            MetaMask
+          </strong>
+           (
+          <strong>
+            iniciar sesión
+          </strong>
+           o 
+          <strong>
+            crear cuenta
+          </strong>
+          ), más información 
+          <a
+            href="https://metamask.io/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            aquí
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      className="alert card amber lighten-4 brown-text show-on-small show-on-medium hide-on-med-and-up"
+    >
+      <div
+        className="close"
+      >
+        <i
+          aria-label="Close"
+          className="fas fa-times"
+          data-dismiss="alert"
+        />
+      </div>
+      <div
+        className="card-content"
+      >
+        <p>
+          <i
+            className="fas fa-exclamation-circle"
+          />
+           
+          <span>
+            Atención:
+          </span>
+          Si está intentando ingresar desde el navegador de su móvil, hágalo por medio de la aplicación móvil de MetaMask, más información 
+          <a
+            href="https://metamask.io/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            aquí
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    <div
+      className="alert card amber lighten-4 brown-text"
+    >
+      <div
+        className="close"
+      >
+        <i
+          aria-label="Close"
+          className="fas fa-times"
+          data-dismiss="alert"
+        />
+      </div>
+      <div
+        className="card-content"
+      >
+        <p>
+          <i
+            className="fas fa-exclamation-circle"
+          />
+           
+          <span>
+            Atención:
+          </span>
+          Estar conectado a la red 
+          <strong>
+            Rinkeby
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col m2 hide-on-small-and-down"
+  />
+</div>
+`;
+
+exports[`Pruebas unitarias a: <App /> Renderizar <App /> correctamente al estar conectado correctamente 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="center"
+  >
+    <h5
+      className="principal-title"
+    >
+      Validación de autenticidad de los certificados académicos digitales
+    </h5>
+    <br />
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col s12 m6"
+      >
+        <span>
+          Complete los campos correctamente:
+        </span>
+      </div>
+    </div>
+    <div
+      className="row container-two"
+    >
+      <div
+        className="col s12 m6"
+      >
+        <form>
+          <div
+            className="row"
+          >
+            <div
+              className="input-field"
+            >
+              <input
+                id="dni"
+                name="storageDNI"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+              <label
+                className="active"
+              >
+                Número de DNI:
+              </label>
+              <span
+                className="helper-text"
+              >
+                Ingrese el número de DNI
+              </span>
+            </div>
+            <div
+              className="file-field input-field"
+            >
+              <div
+                className="btn"
+              >
+                <span>
+                  Subir archivo
+                </span>
+                <input
+                  accept=".pdf"
+                  multiple={false}
+                  name="inputfile"
+                  onChange={[Function]}
+                  type="file"
+                />
+              </div>
+              <div
+                className="file-path-wrapper"
+              >
+                <input
+                  className="file-path"
+                  placeholder="No se ha elegido ningún archivo"
+                  type="text"
+                />
+                <span
+                  className="helper-text"
+                  data-error="El certificado seleccionado debe ser un archivo PDF"
+                  data-success="El certificado seleccionado tiene el formato adecuado"
+                >
+                  Subir el certificado académico digital en formato PDF
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="center"
+          >
+            <button
+              className="btn btnBlueUNL"
+              data-test-id="test-button-validate"
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Validar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        className="col s12 m1 hide-on-small-and-down"
+      />
+      <div
+        className="col s12 m1 verticalLine hide-on-small-and-down"
+      />
+      <div
+        className="col s12 m4 center"
+      >
+        <div
+          className="card-content"
+        >
+          <p>
+            <img
+              alt="El sistema está listo"
+              className="img-initial"
+              src="data-security.svg"
+            />
+             
+            <br />
+            <span
+              className="second-title-cost"
+            >
+              El sistema está listo
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

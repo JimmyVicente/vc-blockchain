@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpg" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json proporciona los metadatos que se utilizan cuando su aplicación web se instala en un en el dispositivo móvil o en el ordenador de un usuario. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Validación de comprobantes digitales</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script type="text/javascript" src="%PUBLIC_URL%/js/script.js"></script>
+
+    <!--
+        Se incluye en esta sección el tipo de fuente del texto de la línea gráfica institucional de la Univerdad Nacional de Loja
+    -->
+    <style media="screen">
+        @font-face {
+            font-family: "Montserrat-Regular";
+            src: url("%PUBLIC_URL%/font/fuente/Montserrat-Regular.otf");
+        }
+
+        @font-face {
+            font-family: "Montserrat-Bold";
+            src: url("%PUBLIC_URL%/font/fuente/Montserrat-Bold.otf");
+        }
+    </style>
+
+    <!--
+        Se enlazan los estilos, con una base en materialize
+    -->
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/css/style.css" media="screen,projection" />
+</head>
+
+<body>
+    <noscript>Necesitas habilitar JavaScript para ejecutar esta aplicación.</noscript>
+    <!--
+        Navegación
+    -->
+    <div class="nav-first">
+        <a id="menu-sidenav" class="sidenav-trigger" data-target="slide-out">
+            <i class="fas fa-bars"></i>
+        </a>
+   
+    </div>
+    <div id="nav">
+        
+    </div>
+
+    <!--
+        Contenido que se maneja con React
+    -->
+    <main id="main">
+        <div id="root"></div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function (ev) {
+            var navfixed = document.getElementById("nav");
+            var main = document.getElementById("main");
+            if (window.scrollY > 64) {
+                navfixed.classList.add('nav-fixed-scroll');
+                main.style.cssText = 'margin-top:64px';
+            }
+            else {
+                navfixed.classList.remove('nav-fixed-scroll');
+                main.style.cssText = 'margin-top:0';
+            }
+        };
+    </script>
+</body>
+
+</html>
